@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выписка</title>
+    <LINK href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<form action="handler.php">
+    <p><input type="checkbox" id="cb1" name="a" value="Дата" checked onchange='showOrHide("cb1");'/> Дата
+        <input type="checkbox" id="cb2" name="a" value="Время" checked onchange='showOrHide("cb2");'/> Время
+        <input type="checkbox" id="cb3" name="a" value="Тип" checked onchange='showOrHide("cb3");'/> Тип
+        <input type="checkbox" id="cb4" name="a" value="Приход" checked onchange='showOrHide("cb4");'/> Приход
+        <input type="checkbox" id="cb5" name="a" value="Расход" checked onchange='showOrHide("cb5");'/> Расход</p>
+</form>
+
+<form name="group">
+    <label>
+        Группировка:
+        <select id="marker" onchange='groupBy(value);'>
+            <option value="noGroup">Без Группировки</option>
+            <option value="groupByDays">По дням</option>
+        </select>
+    </label>
+</form>
+
+<div class="container">
+    <table Id="table1">
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<script src="my-statement-data.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.redClass {
+    color: red;
+    border: 1px solid lightgray;
+    height: 18px;
+}
+
+.greenClass {
+    color: green;
+    border: 1px solid lightgray;
+    height: 18px;
+}
+
+.invisibleClass {
+    display: none;
+    height: 18px;
+}
+
+.visibleClass {
+    display: block;
+    height: 18px;
+}
+
+.headClass {
+    border: solid 1px;
+    height: 18px;
+    width: 100px;
+}
+form{
+    margin-left:40%;
+}
+select{
+    background-color: lightgray;
+    margin-bottom:20px;
+}
+p{
+    margin-left:-5%;
+}
+table {
+    width:100%;
+    border-spacing:0px;
+}
+
+td {
+    border: solid lightgray 1px;
+}
+
+.container {
+    margin-left:2%;
+    margin-right:2%;
+    width: 96%;
+    height: 500px;
+    overflow-y: scroll;
+}
